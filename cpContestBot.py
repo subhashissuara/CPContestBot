@@ -3,19 +3,30 @@
 # ------------------------------
 
 import os
+import platform
 import shutil
 import string
 
 # -------------------------------- CONFIGURE YOUR PERSONAL DETAILS AFTER THIS COMMENT --------------------------------
 
-# Give your parent directory location in which you want to create your contest directory
-parentDir = ""  # Example: - "D:/Everything CS/CP/CodeForces"
+# Give your parent directory location in which you want to create your contest directory for each platform
+if platform.system() == 'Linux':
+    parentDir = ""  # "/home/subhashissuara/HDD/Everything CS/CP/CodeForces"
+
+if platform.system() == 'Windows':
+    parentDir = ""  # "D:/Everything CS/CP/CodeForces"
+
 
 # Give your template name
-templateName = ""  # Example: - "template.cpp"
+templateName = "template.cpp"
 
-# Give your template directory along with template file name
-sourceTemplate = ""  # Example: - "D:/Everything CS/CP/CodeForces/template.cpp"
+# Give your template directory along with template file name for each platform
+if platform.system() == 'Linux':
+    sourceTemplate = ""  # "/home/subhashissuara/HDD/Everything CS/CP/CodeForces/template.cpp"
+
+if platform.system() == 'Windows':
+    sourceTemplate = ""  # "D:/Everything CS/CP/CodeForces/template.cpp"
+
 
 # -------------------------------- CONFIGURE YOUR PERSONAL DETAILS BEFORE THIS COMMENT --------------------------------
 
